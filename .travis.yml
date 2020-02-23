@@ -6,3 +6,4 @@ script:
  - cd HelloCI
  - dotnet restore
  - dotnet build
+ - dotnet test HelloCI-Test/HelloCI-Test.csproj
