@@ -16,7 +16,7 @@ deploy:
   provider: releases
   token: $GITHUB_TOKEN
   file_glob: true
-  file: /home/travis/build/blazovics/IT-Operations/HelloCI/HelloCI/bin/Debug/netcoreapp3.1/
+  file: /home/travis/build/blazovics/IT-Operations/HelloCI/HelloCI/bin/Debug/netcoreapp3.1/*
   on:
     tags:
      true
