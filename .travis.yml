@@ -14,5 +14,3 @@ deploy:
   api_key: $TRAVIS_DATA
   file: HelloCIApp
   skip_cleanup: true
-  on:
-    tags: true
