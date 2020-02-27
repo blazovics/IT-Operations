@@ -3,13 +3,15 @@ mono: none
 dotnet: 3.1
 solution: HelloCI.sln
 script:
- - cd HelloCI
- - cd ..
- - cd HelloCI
- - dotnet restore
- - dotnet build
- - dotnet test HelloCI-Test/HelloCI-Test.csproj
+- cd HelloCI
+- cd ..
+- cd HelloCI
+- dotnet restore
+- dotnet build
+- dotnet test HelloCI-Test/HelloCI-Test.csproj
 deploy:
   provider: releases
-  token: noB5xQKEP+AzsnQgGRip2wfV/k9u7VGUZtbtfnMLDyAmcqOFX/hN4TPdOPIkn2aFXF1G2WwlaAma3kQ4IcJhijEY+TLfHWritkA8C65TX4a2F3VYLDgORMtjD1sMytrWYEQ1cO4vBDzdE2MTG6aB5+VKSL1Y2Ba5A3KX+4oqkm4VtaaMUVDGq0xoTsTFuMgfNj4nAPIn3GfZ2HjqkOV43LDa7dXMyoJRAvQ82X3Z3u5qAgvQWRW5Pc4DGP4X0ZQI69C5ZeUkBEQyvyD0nDeHncdKgqBuPNnfEQ+9iVrHf5afg0FJYGLLtFnS1BHCPb6C0Ep18S33H/bqB3yo5R9fVRwGoQ3P01CoRPXYsd0ZYL7bN4VvCTMlE1/HdjZsyM9rnmHs0X1ziOtA32bCJ9PX9NcodK56UFHgh1PA7AOFghxv5TsCZGmdAOTTmGiWhxaz03EVff+5MEKGJX/imC+9fIbF+IZKAbx9wpdN6CJF3xZDE+WThRzyerXK+9dh8WEb2atjs/0P4DdF25hr0DvBArWra7UXYLHcGOu77d88C1smb4Z3Lmd1AdWqhW4twxjFOIEXShC7UUDRc8FHCvAroyR1rY3JEfulXBZYOx/Q3KCPn95JcA7EPfsNRJ9futPXfpiK1txxADs8Pz0KEOYju8kPIlPLxqi/PBi+zseUfqw=
   file: HelloCIApp
+env:
+  global:
+    secure: V5+lEjcfgM8McnGN0eev1ysVAMB2CMV0frpsA7/eNxSNzvG4Redqpd7xMGU7mvqJ9uCwWJBqhtxBIELM1fnqbB1UxviipTpnRCu8n96lo/8QMOdYS9T8ut+591yXjKMOr/S6K/qT9cRHEiq3OXvccTN03j+lh3H+4niqmhIA9dy9dQfIf8wLEu44I2yCATl1CgZNhttCmnmtN4CtGMPCzOSlTyaRknOLQ1JQ3+0JjyYPM0Ebm8F5sawFupY6Vf8pd/Y5VyL0+my9DcvPcxYOy6rtufZPVDpAEerOQZ8g9LxFApxrK48KAvQTO3wcYORU34u3vhpA7vr3gK/IAONrCX1JMzB7I3fZJ9cJZda+fZ75e+ot6ykm5RwiT05r5H7TAb3Sgc1a2QqVWCWc+UNtwoNCzPtrkyP83g+Co6Lo33rc8gnuobZmB2e0Uwwnc/g3xLJH24Ip+xiURzqVxwiYyG2gv4Za+ZmUGIbgNjMHM5ZCU7srhDe+VzJsiFKMMqBwXceE2aXyn3hNrCFuRBaaamMg8G4/lNztiOHAKT1ihZIcHonUwnOITcncUQMvNaZT+A1pjS5u314ZgDZDv6nRDRbgqDQ1N4fHU4K5bcItt8L9ikUUrtfiMRZfValBRwtYdvhy/yYrVEKWb6tkud5FHsODts2Og9LBdKWcw39MILQ=
