@@ -7,3 +7,11 @@ script:
  - dotnet restore
  - dotnet build
  - dotnet test HelloCI-Test/HelloCI-Test.csproj
+ 
+ deploy:
+  provider: releases
+  api_key: 5028706acfcd24d0e2d6fbadb29e09960192b331
+  file: "HelloCIApp"
+  skip_cleanup: true
+  on:
+    tags: true
