@@ -9,6 +9,8 @@ script:
 - dotnet restore
 - dotnet build
 - dotnet test HelloCI-Test/HelloCI-Test.csproj
+before_deploy:
+- ls -al
 deploy:
   provider: releases
   token: $GITHUB_TOKEN
