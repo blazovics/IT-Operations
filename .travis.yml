@@ -11,5 +11,4 @@ script:
  - dotnet test HelloCI-Test/HelloCI-Test.csproj
 deploy:
   provider: releases
-  token: $GITHUB_TOKEN
   file: HelloCIApp
