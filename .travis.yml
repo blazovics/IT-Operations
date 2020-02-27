@@ -10,8 +10,8 @@ script:
  
  deploy:
   provider: releases
-  api_key: 5028706acfcd24d0e2d6fbadb29e09960192b331
-  file: "HelloCIApp"
+  api_key: TRAVIS_DATA
+  file: HelloCIApp
   skip_cleanup: true
   on:
     tags: true
