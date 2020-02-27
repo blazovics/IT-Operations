@@ -6,7 +6,7 @@ namespace HelloCI
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello CI World!");
+            Console.WriteLine("Hello CI/CD World!");
         }
     }
 }
