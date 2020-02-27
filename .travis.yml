@@ -11,6 +11,5 @@ script:
  - dotnet test HelloCI-Test/HelloCI-Test.csproj
 deploy:
   provider: releases
-  api_key: $TRAVIS_DATA
+  token: TRAVIS_DATA
   file: HelloCIApp
-  skip_cleanup: true
