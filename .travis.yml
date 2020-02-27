@@ -12,8 +12,7 @@ script:
 deploy:
   provider: releases
   token: $GITHUB_TOKEN
-  file: HelloCI
-  name: Released
+  file: *
 env:
   global:
     secure: V5+lEjcfgM8McnGN0eev1ysVAMB2CMV0frpsA7/eNxSNzvG4Redqpd7xMGU7mvqJ9uCwWJBqhtxBIELM1fnqbB1UxviipTpnRCu8n96lo/8QMOdYS9T8ut+591yXjKMOr/S6K/qT9cRHEiq3OXvccTN03j+lh3H+4niqmhIA9dy9dQfIf8wLEu44I2yCATl1CgZNhttCmnmtN4CtGMPCzOSlTyaRknOLQ1JQ3+0JjyYPM0Ebm8F5sawFupY6Vf8pd/Y5VyL0+my9DcvPcxYOy6rtufZPVDpAEerOQZ8g9LxFApxrK48KAvQTO3wcYORU34u3vhpA7vr3gK/IAONrCX1JMzB7I3fZJ9cJZda+fZ75e+ot6ykm5RwiT05r5H7TAb3Sgc1a2QqVWCWc+UNtwoNCzPtrkyP83g+Co6Lo33rc8gnuobZmB2e0Uwwnc/g3xLJH24Ip+xiURzqVxwiYyG2gv4Za+ZmUGIbgNjMHM5ZCU7srhDe+VzJsiFKMMqBwXceE2aXyn3hNrCFuRBaaamMg8G4/lNztiOHAKT1ihZIcHonUwnOITcncUQMvNaZT+A1pjS5u314ZgDZDv6nRDRbgqDQ1N4fHU4K5bcItt8L9ikUUrtfiMRZfValBRwtYdvhy/yYrVEKWb6tkud5FHsODts2Og9LBdKWcw39MILQ=
