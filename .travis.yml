@@ -15,7 +15,7 @@ deploy:
   skip_cleanup: true
   provider: releases
   token: $GITHUB_TOKEN
-  file: /home/travis/build/blazovics/IT-Operations/HelloCI/HelloCI/bin/Debug/netcoreapp3.1/HelloCI
+  file: /home/travis/build/blazovics/IT-Operations/HelloCI/HelloCI/bin/Debug/netcoreapp3.1/*
   on:
     tags:
      true
